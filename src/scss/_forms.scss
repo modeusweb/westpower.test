@@ -39,7 +39,7 @@ button {
     font-weight: 300;
 
     &:hover {
-      border-color: #ccc;
+      border-color: #aaa;
     }
 
     &:focus {
@@ -109,6 +109,14 @@ button {
   font-weight: 300;
   font-size: rem(13px);
 
+  &:hover {
+
+    &:after {
+      border-bottom: 1px dashed;
+    }
+
+  }
+
   &[data-status='save'] {
     color: $green;
 
@@ -146,7 +154,7 @@ button {
   user-select: none;
   position: relative;
   color: #000;
-  transition: border-color 0.3s;
+  transition: border-color 0.3s, background-color 0.3s;
 
   > input[type="checkbox"],
   > input[type="radio"] {
@@ -223,11 +231,11 @@ button {
     background-color: #fff;
     border-radius: 5px;
     overflow: hidden;
+  }
 
-    &:hover {
-      border-color: #ccc;
-    }
-
+  &:hover {
+    background-color: #fbfbfb;
+    border-color: #ddd;
   }
 
 }
