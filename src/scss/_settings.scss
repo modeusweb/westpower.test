@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+// ----------------------
+// == Site settings
+// ----------------------
+
+// Variables
+
+$mainFont: 'Montserrat', sans-serif;
+$regular: #000;
+$black: #090a22;
+$yellow: #ffb911;
+$orange: #f99f24;
+$green: #88d790;
+$gray: #f8f8fa;
+
+
+// Functions
+
+// calc px to rem
+$root-font-size: 16px;
+@function rem($size) {
+  @return $size / $root-font-size * 1rem;
+}
+
+// calc line height
+@function lh($font-size, $line-height){
+  @return $line-height / $font-size * 1em;
+}
+
+// calc padding bottom
+@function pb($width, $height){
+  @return $height / $width * 100%;
+}

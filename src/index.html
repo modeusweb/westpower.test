@@ -1,0 +1,358 @@
+@include('partials/header.html')
+
+	<div class="container">
+
+		<h1>Профиль и интересы</h1>
+
+		<div class="profile">
+
+			<div class="profile__section">
+				<p>Здесь вы можете изменять свой email и пароль, а также указать дополнительные номера телефонов для использования вашей карты и указать свои интересы</p>
+				<form class="profile__form regular-form" action="#" name="profile-personal">
+					<div class="inputs-row">
+						<div class="input-col">
+							<label class="input-label has-badge" for="email">Email<span class="regular-badge">+2%</span></label>
+							<input id="email" type="email" name="email" placeholder="ivan@mail.ru">
+							<button class="input-btn js-input-switcher" data-status="save" data-target="#email" type="button">
+								<svg><use xlink:href="img/sprite.svg#pencil"></use></svg>
+							</button>
+						</div>
+						<div class="input-col">
+							<label class="input-label" for="password">Пароль</label>
+							<input id="password" type="password" name="password" placeholder="*****">
+							<button class="input-btn js-input-switcher" data-status="save" data-target="#password" type="button">
+								<svg><use xlink:href="img/sprite.svg#pencil"></use></svg>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="profile__section">
+				<h2>Дополнительные контактные телефоны</h2>
+				<p>Вы можете добавить до двух дополнительных номеров телефона.<br> Указанные номера могут быть использованы членами вашей семьи для получения скидки, накопления баллов и покупок по вашей карте</p>
+				<form class="profile__form regular-form" action="#" name="profile-phones">
+					<div class="inputs-row">
+						<div class="input-col">
+							<label class="input-label" for="phone_1">Телефон 1</label>
+							<input id="phone_1" type="tel" name="phone_1" placeholder="+7(___)___-____">
+							<button class="input-btn js-input-switcher" data-status="save" data-target="#phone_1" type="button">
+								<svg><use xlink:href="img/sprite.svg#pencil"></use></svg>
+							</button>
+						</div>
+						<div class="input-col">
+							<label class="input-label" for="phone_2">Телефон 2</label>
+							<input id="phone_2" type="tel" name="phone_2" placeholder="+7(___)___-____">
+							<button class="input-btn js-input-switcher" data-status="save" data-target="#phone_2" type="button">
+								<svg><use xlink:href="img/sprite.svg#pencil"></use></svg>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="profile__section">
+
+				<div class="profile__subscription">
+					<h2>Подписка на увеличенную скидку</h2>
+					<p>Вы можете выбрать один магазин для предоставления увеличенной скидки. Выбор можно сделать не более 1 раза в месяц. По истечению календарного месяца скидка будет обнулена автоматически</p>
+					<form class="profile__form" action="#" name="profile-shops">
+						<div class="accordion">
+							<div class="accordion__head">Выберите магазин</div>
+							<div class="accordion__body">
+								<div class="accordion__content">
+									<label class="radio-label">
+										<input type="radio" name="shop" value="1">
+										<span>
+											<i></i><em><img src="img/brands/logo-1.svg" alt=""></em>
+										</span>
+									</label>
+									<label class="radio-label">
+										<input type="radio" name="shop" value="2">
+										<span>
+											<i></i><em><img src="img/brands/logo-2.svg" alt=""></em>
+										</span>
+									</label>
+									<label class="radio-label">
+										<input type="radio" name="shop" value="3">
+										<span>
+											<i></i><em><img src="img/brands/logo-3.svg" alt=""></em>
+										</span>
+									</label>
+									<label class="radio-label">
+										<input type="radio" name="shop" value="4">
+										<span>
+											<i></i><em><img src="img/brands/logo-4.svg" alt=""></em>
+										</span>
+									</label>
+									<label class="radio-label">
+										<input type="radio" name="shop" value="5">
+										<span>
+											<i></i><em><img src="img/brands/logo-5.svg" alt=""></em>
+										</span>
+									</label>
+									<label class="radio-label">
+										<input type="radio" name="shop" value="6">
+										<span>
+											<i></i><em><img src="img/brands/logo-6.svg" alt=""></em>
+										</span>
+									</label>
+									<label class="radio-label">
+										<input type="radio" name="shop" value="7">
+										<span>
+											<i></i><em><img src="img/brands/logo-7.svg" alt=""></em>
+										</span>
+									</label>
+									<label class="radio-label">
+										<input type="radio" name="shop" value="8">
+										<span>
+											<i></i><em><img src="img/brands/logo-8.svg" alt=""></em>
+										</span>
+									</label>
+									<label class="radio-label">
+										<input type="radio" name="shop" value="9">
+										<span>
+											<i></i><em><img src="img/brands/logo-9.svg" alt=""></em>
+										</span>
+									</label>
+									<label class="radio-label">
+										<input type="radio" name="shop" value="10">
+										<span>
+											<i></i><em><img src="img/brands/logo-10.svg" alt=""></em>
+										</span>
+									</label>
+									<label class="radio-label">
+										<input type="radio" name="shop" value="11">
+										<span>
+											<i></i><em><img src="img/brands/logo-11.svg" alt=""></em>
+										</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="profile__subscription">
+					<h2>Подписка на уведомления об акциях</h2>
+					<p>Вы можете выбрать один или несколько магазинов, по которым вам интересно получать предложения</p>
+					<form class="profile__form" action="#" name="profile-promo">
+						<div class="inputs-row">
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em><img src="img/brands/logo-1.svg" alt=""></em>
+									</span>
+								</label>
+							</div>
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em><img src="img/brands/logo-2.svg" alt=""></em>
+									</span>
+								</label>
+							</div>
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em><img src="img/brands/logo-3.svg" alt=""></em>
+									</span>
+								</label>
+							</div>
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em><img src="img/brands/logo-4.svg" alt=""></em>
+									</span>
+								</label>
+							</div>
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em><img src="img/brands/logo-5.svg" alt=""></em>
+									</span>
+								</label>
+							</div>
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em><img src="img/brands/logo-6.svg" alt=""></em>
+									</span>
+								</label>
+							</div>
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em><img src="img/brands/logo-7.svg" alt=""></em>
+									</span>
+								</label>
+							</div>
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em><img src="img/brands/logo-8.svg" alt=""></em>
+									</span>
+								</label>
+							</div>
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em><img src="img/brands/logo-9.svg" alt=""></em>
+									</span>
+								</label>
+							</div>
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em><img src="img/brands/logo-10.svg" alt=""></em>
+									</span>
+								</label>
+							</div>
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em><img src="img/brands/logo-11.svg" alt=""></em>
+									</span>
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="profile__subscription">
+					<h2>Любимый бренд</h2>
+					<p>Расскажите нам о своих любимых брендах, а мы учтем ваш выбор при составлении индивидуальных предложений</p>
+					<form class="profile__form" action="#" name="profile-brands">
+						<div class="inputs-row">
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em>Calvin Klein Jeans</em>
+									</span>
+								</label>
+							</div>
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em>Calvin Klein Jeans</em>
+									</span>
+								</label>
+							</div>
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em>Calvin Klein Jeans</em>
+									</span>
+								</label>
+							</div>
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em>United Colors of Benetton</em>
+									</span>
+								</label>
+							</div>
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em>United Colors of Benetton</em>
+									</span>
+								</label>
+							</div>
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em>United Colors of Benetton</em>
+									</span>
+								</label>
+							</div>
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em>Reima</em>
+									</span>
+								</label>
+							</div>
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em>Reima</em>
+									</span>
+								</label>
+							</div>
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em>Reima</em>
+									</span>
+								</label>
+							</div>
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em>Strellson</em>
+									</span>
+								</label>
+							</div>
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em>Strellson</em>
+									</span>
+								</label>
+							</div>
+							<div class="input-col">
+								<label class="checkbox-label is-bordered-block">
+									<input type="checkbox" name="#">
+									<span>
+										<i></i><em>Strellson</em>
+									</span>
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="profile__subscription">
+					<div class="news-socials">
+						<div class="news-socials__title">Подпишитесь на наши новости</div>
+						<div class="news-socials__list">
+							<a class="news-socials__item" href="#" target="_blank" title="VK">
+								<svg><use xlink:href="img/sprite.svg#vk"></use></svg>
+							</a>
+							<a class="news-socials__item" href="#" target="_blank" title="Telegram">
+								<svg><use xlink:href="img/sprite.svg#telegram"></use></svg>
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+@include('partials/footer.html')

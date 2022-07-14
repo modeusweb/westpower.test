@@ -1,0 +1,46 @@
+/* ===========================
+   Profile
+   =========================== */
+
+.profile {
+
+  &__section {
+    padding: 33px 0 48px;
+    border-bottom: 1px solid #f8f8fa;
+
+    &:first-of-type {
+      padding-top: 0;
+    }
+
+    &:last-of-type {
+      padding-bottom: 0;
+      border: none;
+    }
+
+  }
+
+  &__form {
+    padding-top: 15px;
+  }
+
+  &__subscription {
+    margin-bottom: 65px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+}
+
+
+/* responsive */
+
+@media (max-width: 767px) {
+
+  .profile__subscription {
+    margin-bottom: 40px;
+  }
+
+}
